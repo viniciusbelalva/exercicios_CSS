@@ -1,79 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=BJ+Cree:wght@400;500;600;700&display=swap');
-        *{
+        * {
             padding: 0;
             margin: 0;
-            font-family:"BJ Cree", serif;
         }
-        .borda{
-            border-style: solid;
-            border-width: 5px;
-            border-color: rgb(255, 255, 255);
-            background-color: gray;
-            padding: 5px;
-            color: white;
-            border-radius: 23%;
-        }
-        .borda:hover{
-            border-style: solid;
-            border-wigth: 5px;
-            border-color: rgb(255, 255, 255);
-            background-color: rgb(24, 24, 160);
-            padding: 3px;
 
+        .borda {
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            background-color: white;
+            padding: 10px;
         }
-        .cor{
+
+        .borda:hover {
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            background-color: gray;
+            padding: 08px;
+        }
+
+        .fundo {
+            background-image: url(img/Sistema\ Solar.jpg );
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: aliceblue;
+            color: white;
+        }
+
+        .fundo2 {
+            background-image: url(img/Galáxia.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: aliceblue;
+            color: white;
+        }
+
+        .cor {
             background-color: gray;
         }
-        .top{
-            padding: 25px;
+
+        .top {
+            padding-top: 150px;
+            padding-bottom: 20px;
+            text-align: center right;
+            background-color: black;
+            height: 20px;
             text-align: center;
-            background-color: rgb(255, 255, 255);
+        }
+
+        p {
+            text-align: justify;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .center {
+            text-align: center;
+            padding: 25px;
+            background-color: black;
             height: 20px;
         }
-        .caixa01 {
-            border: solid 3px black;
-            background-color: white;
-            padding: 25px;
-            margin: 20px;
-            font-family: "BJ Cree", serif;
-            color: rgb(0, 0, 0);
+        .align{
+            text-align: center;
         }
-        .font{
-            column-count: 3;
-            column-rule-style: solid;
-            column-rule-color: white;
-            color:white
-        }
+
     </style>
 </head>
 <body class="cor">
-    <main>
+    <div class="center">
+    <img src="img/Nasa.jpg">
+</div>
+    <header>
         <div class="top">
-            <span class="borda">Home</span>
-            <span class="borda">Menu</span>
-            <span class="borda">Rede</span>
-            <span class="borda">Stop</span>
+            <a href="#sistema solar"><span class="borda">HOME</span></a>
+            <a href="#galáxia"><span class="borda">MENU</span></a>
         </div>
-        <div class="caixa01">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis quae iusto expedita possimus. Corrupti quod illum ab. Nobis unde nostrum corporis repudiandae reiciendis harum delectus perferendis dicta placeat dolores! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore magnam veniam illum, cumque laudantium et tempora odio inventore, quia repellat sapiente architecto vitae aut ducimus corrupti dolores omnis rem voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. At assumenda non quidem, officia amet est sequi quo consequatur, voluptate tempore hic nam vero officiis blanditiis adipisci animi doloribus. Obcaecati, unde!
-    </div>
-    <table>
-    <th><img src="img/Logo_lorem_6-removebg-preview.png"></th>
-    <th><div class="caixa01">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nulla mollitia atque repellendus impedit fuga nam iste alias, magni quidem. Velit ullam impedit quae repudiandae rerum? Aliquid sapiente consectetur rerum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum debitis nostrum, commodi, provident dicta illo, maiores repudiandae quis iste necessitatibus quia minus ab beatae alias quasi cupiditate doloremque harum? Iusto?
-    </div>
-    </th>
-    </table>
-    <div class="font">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est, earum nulla quod corrupti eaque numquam cumque similique pariatur, fuga sint hic in ad! Vitae quae eum facere nihil exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam exercitationem natus repudiandae et labore doloribus, pariatur libero laborum laudantium animi distinctio, alias dolores omnis ad ullam hic! Iste, voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos aperiam officia consectetur eius obcaecati. Recusandae doloribus quos voluptatibus quisquam maxime. Temporibus molestias aut itaque ipsa nostrum nobis atque, hic eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore mollitia consequatur officia laborum placeat deserunt nisi eligendi. Vel veniam sapiente cum consectetur, quam at! Saepe ea rem deleniti eveniet!
-    </div>
+    </header>
+    <main>
+        <hr shadow>
+        <div class="align">
+        <h1> Sistema Solar</h1>
+        </div>
+        <p id="sistema solar">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, dolores nobis omnis, molestiae culpa nemo, odio sequi rem quo veniam voluptates ex facilis nam fugiat delectus distinctio. Asperiores, quasi ipsa.
+            <hr>
+            
+        <div class="fundo">
+            <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+            <br><br> <br><br> <br><br> <br><br> <br><br>
+            </p>
+        </div>
+        <hr>
+        <p id="galáxia"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa
+            quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa
+            quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore quia fuga ipsam eveniet,
+            repudiandae unde exercitationem, ad nemo fugiat numquam. Facere unde labore dicta fugiat nihil autem quasi
+            nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa
+            quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere.</p>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa
+            quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa
+            quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore quia fuga ipsam eveniet,
+            repudiandae unde exercitationem, ad nemo fugiat numquam. Facere unde labore dicta fugiat nihil autem quasi
+            nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa
+            quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere.</p>
+            <hr>
+        <div class="fundo2">
+            <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+            <br><br> <br><br> <br><br> <br><br> <br><br>
+
+        </div>
+        <hr>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa
+            quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui
+            culpa quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui
+            culpa quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore quia fuga ipsam eveniet,
+            repudiandae unde exercitationem, ad nemo fugiat numquam. Facere unde labore dicta fugiat nihil autem quasi
+            nobis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui
+            culpa quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui
+            culpa quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed
+            facere.</p>
+            <hr>
     </main>
 </body>
+
 </html>
