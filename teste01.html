@@ -4,74 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Float e Clear</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        .borda{
-            border-style:solid;
-            border-width: 2px;
-            border-color: black;
-            background-color: white;
+        .conteudo{
+            text-align: center;
+            margin: 2px, solid black;
+            background-color: rgb(202, 200, 200);
             padding: 10px;
+            margin: 5px;
+            width: 150px;
+            height: 150px;
+            float: left;
         }
-        .borda:hover{
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            background-color: gray;
-            padding: 08px;
+        .clear{
+            clear: both;
         }
-        .fundo{
-            background-image: url(img/hamburguer.jpg );
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            background-color: aliceblue;
-        }
-        .cor{
-            background-color: gray;
-        }
-        .top{
-            padding: 25px;
-            text-align: center right;
-            background-color: black;
-            height: 20px;
+        .principal{
+            margin: solid black 3px;
+            background-color: rgb(9, 0, 32);
             text-align: center;
         }
-        p{
-            text-align: justify;
-            padding: 10px
+        .p{
+            margin: 15px;
+            padding: 5px;
+            color: white;
         }
     </style>
 </head>
-<body class="cor">
-    <header>
-        <div class="top">
-            <span class="borda">HOME</span>
-            <span class="borda">MENU</span>
-            <span class="borda">REDE</span>
-            <span class="borda">STOP</span>
+<body>
+    <div class="principal">
+        <div class="conteudo">
+            CONTEÚDO 01
         </div>
-    </header>
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a eos unde debitis reprehenderit? Tempora fugit qui vitae laboriosam quam ratione velit minima in inventore similique maiores molestiae, iure praesentium?</p>
-        <div class="fundo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A distinctio, reprehenderit id aperiam fugiat dolores vero aspernatur. Dolorem praesentium, deserunt est atque ea in cum aperiam possimus iure dolorum facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore dolores corporis aperiam, consequuntur sunt veniam amet, commodi, nobis ullam voluptatem quam! Doloribus in accusantium ipsa accusamus minima aliquam fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit itaque cumque voluptate cum, velit, reprehenderit inventore perspiciatis temporibus, nemo nisi enim voluptatem est eos quis distinctio non debitis eius tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur cum labore, vel expedita aperiam? Quos rem, quisquam eum est non itaque! Omnis voluptatibus, amet ut in eveniet molestias quo.
-            </p>
+        <div class="conteudo">
+            CONTEÚDO 02
         </div>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque ipsum aliquid non qui culpa quidem laborum pariatur cumque iure error eius, ab quisquam aliquam aspernatur tempora blanditiis sed facere.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore quia fuga ipsam eveniet, repudiandae unde exercitationem, ad nemo fugiat numquam. Facere unde labore dicta fugiat nihil autem quasi nobis!</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </main>
+        <div class="conteudo">
+            CONTEÚDO 03
+        </div>
+        <div class="p">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veniam perspiciatis sed? Sequi laboriosam molestias esse ullam neque eveniet corrupti perspiciatis blanditiis libero obcaecati qui natus rerum quisquam, fuga ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolorem iure voluptatem quaerat tempora obcaecati veritatis quidem expedita velit quis minima illum voluptate, ipsam assumenda totam odit laborum. Veniam, assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis alias sit libero, quis tenetur omnis, molestiae sint quia doloribus impedit nostrum ab numquam, voluptates sed facilis culpa? Atque, asperiores veritatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum ipsam maxime quidem dolor, quibusdam cupiditate, tempore architecto quo pariatur reiciendis id debitis minima ipsum alias officia repellendus voluptates! Sequi!</p>
+            </div>
+            <div class="2">
+            <div class="conteudo">
+            <img src="img/Nasa.jpg" width="150" height="150">
+        </div>
+        <div class="conteudo">
+            <img src="img/Sistema Solar.jpg" width="150" height="150">
+        </div>
+        <div class="conteudo">
+            <img src="img/Galáxia.jpg" width="150" height="150">
+        </div>
+        <img src="img/Nasa.jpg" width="300">
+        <div class="clear"></div>
+    </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis suscipit recusandae distinctio veritatis? At nulla minima fuga et, sequi doloribus id omnis quae odio odit in totam nemo reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam, culpa unde doloribus pariatur quidem voluptatum obcaecati error fuga impedit, quo minus molestiae nisi a ducimus dolores adipisci, doloremque quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae laborum repudiandae nostrum tempora officia excepturi expedita vel labore culpa consequuntur fugiat error sed commodi necessitatibus omnis maiores quaerat, aspernatur quia?
+    </p>
 </body>
 </html>
