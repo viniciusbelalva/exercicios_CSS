@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,26 @@
     <title>Site Parallax</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-        body, html{
-            margin: 0;/*sem bordas da página*/
-            padding: 0;/*sem bordas da página*/
-            height: 100%;/*ocupar 100% da tela verticalmente*/      
+
+        body,
+        html {
+            margin: 0;
+            /*sem bordas da página*/
+            padding: 0;
+            /*sem bordas da página*/
+            height: 100%;
+            /*ocupar 100% da tela verticalmente*/
         }
-        .cabe{ /*menu*/
+
+        .cabe {
+            /*menu*/
             width: 100%;
             height: 100px;
             background-color: #e3e8dd;
         }
-        input{ /*botão*/
+
+        input {
+            /*botão*/
             width: 20%;
             height: 30px;
             font-size: 18px;
@@ -28,77 +38,95 @@
             background-image: url(Img/lupa.png);
             background-size: 10%;
             background-repeat: no-repeat;
-            background-position:  top 5px right 10px;
+            background-position: top 5px right 10px;
             margin-top: 30px;
             margin-right: 20px;
             float: right;
         }
-        .logo{
+
+        .logo {
             float: left;
-            text-indent: 20px;/*pixels de distância da logo para a borda*/
+            text-indent: 20px;
+            /*pixels de distância do elemento para a borda*/
             width: 20%;
         }
-        .cabe ul{ /*código para a lista*/
+
+        .cabe ul {
+            /*código para a lista*/
             float: left;
             width: 50%;
             margin: 0px 0px 0px 20px;
             line-height: 100px;
             text-align: center;
         }
-        .cabe ul li{ /*código para cada linha da lista*/
+
+        .cabe ul li {
+            /*código para cada linha da lista*/
             text-decoration: none;
-            display: inline;/*elementos na mesma linha*/
+            display: inline;
+            /*elementos na mesma linha*/
             padding: 20px;
-            color:  rgb(13, 66, 13); 
+            color: rgb(13, 66, 13);
             font-family: 'Finger Paint', cursive;
             font-size: 1.5em;
-            cursor: pointer;/*elemento interagível ou clicável*/
-        }
-        .cabe ul li:hover{
-            color:  rgb(55, 120, 31); 
+            cursor: pointer;
+            /*elemento interagível ou clicável*/
         }
 
+        .cabe ul li:hover {
+            color: rgb(55, 120, 31);
+        }
 
 
-        
-        .box1, .box2, .box3, .box4{
-            position: relative;/*desloca o elemento sem afetar o layout*/
+
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            position: relative;
+            /*desloca o elemento sem afetar o layout*/
             height: 100%;
-            opacity: 0.7;
+            opacity: 1;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;        
-        } 
-        .box1{
+            background-attachment: fixed;
+        }
+
+        .box1 {
             background-image: url(Img/bAP.gif);
         }
-        .box2{
+
+        .box2 {
             background-image: url(Img/foto02.jpg);
         }
-        .box3{
+
+        .box3 {
             background-image: url(Img/foto03.jpg);
         }
-        .box4{
+
+        .box4 {
             background-image: url(Img/foto04.jpg);
         }
-        
-        .cont-img{
+
+        .cont-img {
             position: absolute;
             top: 45%;
             width: 100%;
             text-align: center;
         }
-        .cont-img span.titulo{
-           background-color: rgb(13, 66, 13); 
-           color: #ffffff;   
-           padding: 20px;
-           font-size: 20px;
-           letter-spacing: 5px;      
+
+        .cont-img span.titulo {
+            background-color: rgb(76, 157, 76);
+            color: #ffffff;
+            padding: 20px;
+            font-size: 20px;
+            letter-spacing: 5px;
         }
 
-        .conteudo{
+        .conteudo {
             background-color: #e3e8dd;
-            color: rgb(13, 66, 13); 
+            color: rgb(13, 66, 13);
             text-align: justify;
             padding: 50px 100px 40px 100px;
             background-image: url(Img/mold01.png);
@@ -107,44 +135,51 @@
             background-position: center;
         }
 
-        h2{
-            text-transform: uppercase;/*todo o texto em maiúsculo*/
-            color: rgb(13, 66, 13); 
+        h2 {
+            text-transform: uppercase;
+            /*todo o texto em maiúsculo*/
+            color: rgb(13, 66, 13);
             text-align: center;
         }
 
-        .roda{
+        .roda {
             margin-top: -20px;
             height: 330px;
             background-color: #e3e8dd;
         }
-        .roda .down_up{
+
+        .roda .down_up {
             text-align: center;
-            color:  rgb(13, 66, 13); 
+            color: rgb(13, 66, 13);
             font-family: 'Finger Paint', cursive;
             font-size: 4em;
         }
-        .roda .down_meio{
+
+        .roda .down_meio {
             text-align: center;
-            color:  rgb(13, 66, 13); 
+            color: rgb(13, 66, 13);
             font-family: 'Finger Paint', cursive;
             font-size: 1.5em;
             text-align: center;
         }
-        .roda .down_down{
+
+        .roda .down_down {
             text-align: center;
         }
-        .roda .down_down img{
+
+        .roda .down_down img {
             width: 40px;
             border-radius: 25px;
+            /*arredondar os cantos*/
             border: 4px rgb(13, 66, 13) dotted;
             cursor: pointer;
             margin: 20px;
             padding: 5px;
         }
-        </style>
+    </style>
 
 </head>
+
 <body>
 
     <div class="cabe">
@@ -169,20 +204,26 @@
     </div>
     <div class="conteudo">
         <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta
+            mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
         </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
+            quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates
+            quia! Voluptates.</p>
     </div>
     <div class="box2">
-            <div class="cont-img">
-                <span class="titulo">NATUREZA É VIVA</span>
-            </div>
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É VIVA</span>
+        </div>
     </div>
     <div class="conteudo">
         <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta
+            mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
         </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
+            quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates
+            quia! Voluptates.</p>
     </div>
     <div class="box3">
         <div class="cont-img">
@@ -191,9 +232,12 @@
     </div>
     <div class="conteudo">
         <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta
+            mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
         </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur
+            quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates
+            quia! Voluptates.</p>
     </div>
     <div class="box4">
         <div class="cont-img">
@@ -205,7 +249,8 @@
         <br><br><br>
         <div class="down_up">NATUREZA</div>
         <div class="down_meio">Lorem ipsum dolor sit amet consectetur adipisicing elit
-            <br>#NATUREZA</div>
+            <br>#NATUREZA
+        </div>
         <div class="down_down">
             <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook logo.png"></a>
             <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp logo.png"></a>
@@ -214,4 +259,5 @@
     </div>
 
 </body>
+
 </html>
