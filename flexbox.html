@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .conteudo {
+            height: 800px;
+            display: flex;
+            gap: 5px;
+            /*
+                
+               /* comportamento do intem - linha ou coluna
+                row, row-reverse, column, column-reverse*/
+            flex-direction: row;
+
+            /* quebra do layout
+                nowwrap, wrap, wrap-reverse*/
+            flex-wrap: nowrap;
+
+            /* distribuição dos itens na horizontal
+                flex-star, flex-end, center, space-between, space-around*/
+            justify-content: space-around;
+
+            /*distribuição dos itens na vertical
+                 stretch, center, flex-star, flex-end, baseline  */
+            align-items: center;
+
+
+        }
+
+        .item {
+            width: 320px;
+            height: 600px;
+            background: rgb(100, 49, 17);
+            text-align: center;
+            padding: 15px;
+            box-shadow: inset;
+            color: white;
+            border-radius: 20px;
+
+
+            /*
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 30px;*/
+        }
+
+        .container {
+            background-color: rgb(226, 225, 176);
+            text-align: center;
+            
+        }
+
+        h1{
+            font-size: 60px;
+            padding-top: 40px;
+        }
+
+        img{
+            border-radius: 10px;
+        }
+
+        /*
+                .itemA{
+                    flex-grow: 1;
+                    flex-shrink: 2;
+                }
+*/
+
+
+
+
+        /*
+          .order1{
+                order: 1;
+            }
+            .order2{
+                order: 2;
+            }
+            .order3{
+                order: 3;
+            }
+            .order4{
+                order: 4;
+            }
+            */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Galáxia</h1>
+        <div class="conteudo">
+
+            <div class="item"> <img src="img/Buraco Negro.jpg" width="320" height="300">
+                <h2>Buraco Negro</h2> 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione eveniet velit repudiandae perferendis esse, incidunt aliquid! Cumque dolores praesentium incidunt animi, odit numquam, repellendus corrupti vero laudantium assumenda soluta?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illo perferendis deleniti neque laudantium libero voluptates consequuntur officiis facilis, nihil repellat.</p>
+            </div>
+
+            <div class="item"> <img src="img/Galaxia 2.jpg" width="320" height="300">
+            <h2>Ândromeda</h2> 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione eveniet velit repudiandae perferendis esse, incidunt aliquid! Cumque dolores praesentium incidunt animi, odit numquam, repellendus corrupti vero laudantium assumenda soluta?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illo perferendis deleniti neque laudantium libero voluptates consequuntur officiis facilis, nihil repellat.</p>
+            </div>
+
+            <div class="item"> <img src="img/galaxia 3.jpg" width="320" height="300">
+            <h2>Via Láctea</h2> 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione eveniet velit repudiandae perferendis esse, incidunt aliquid! Cumque dolores praesentium incidunt animi, odit numquam, repellendus corrupti vero laudantium assumenda soluta?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illo perferendis deleniti neque laudantium libero voluptates consequuntur officiis facilis, nihil repellat.</p>
+            </div>
+
+            <div class="item"> <img src="img/Galáxia 1.jpg" width="320" height="300">
+            <h2>Nebulosa</h2> 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione eveniet velit repudiandae perferendis esse, incidunt aliquid! Cumque dolores praesentium incidunt animi, odit numquam, repellendus corrupti vero laudantium assumenda soluta?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illo perferendis deleniti neque laudantium libero voluptates consequuntur officiis facilis, nihil repellat.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

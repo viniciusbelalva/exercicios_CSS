@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    background-color: rgb(29, 1, 64);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.conteudo{
+    background-image: linear-gradient(to bottom, rgb(29, 1, 103), rgb(66, 8, 110), rgb(105, 51, 166));'
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item{
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.item:hover{
+    width: 30%;
+    height: 300px;
+}
+
+.itemA{
+    background-image: url(Img/Galáxia\ 1.jpg);
+}
+
+.itemB{
+    background-image: url(Img/Galaxia\ 2.jpg);
+}
+
+.itemC{
+    background-image: url(Img/galaxia\ 3.jpg);
+}
+
+.itemD{
+    background-image: url(Img/Buraco\ Negro.jpg);
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="titulo">
+    <h1>Escolha a melhor foto</h1>
+</div>
+
+<div class="conteudo">
+    <div class="item itemA"></div>
+    <div class="item itemB"></div>
+    <div class="item itemC"></div>
+    <div class="item itemD"></div>
+
+    <div class="item itemA"></div>
+    <div class="item itemB"></div>
+    <div class="item itemC"></div>
+    <div class="item itemD"></div>
+
+    <div class="item itemA"></div>
+    <div class="item itemB"></div>
+    <div class="item itemC"></div>
+    <div class="item itemD"></div>
+</div>
+</body>
+</html>
