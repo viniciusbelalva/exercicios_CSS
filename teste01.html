@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float e Clear</title>
     <style>
-        .conteudo{
+        .conteudo {
             text-align: center;
             margin: 2px, solid black;
             background-color: rgb(202, 200, 200);
@@ -16,50 +17,254 @@
             height: 150px;
             float: left;
         }
-        .clear{
+
+        .clear {
             clear: both;
         }
-        .principal{
+
+        .principal {
             margin: solid black 3px;
             background-color: rgb(9, 0, 32);
             text-align: center;
         }
-        .p{
+
+        .p {
             margin: 15px;
             padding: 5px;
             color: white;
         }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(222, 222, 222);
+        }
+
+        /* TÍTULO */
+
+        .titulo {
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            padding: 15px;
+            color: rgb(110, 52, 1);
+        }
+
+        /* CONTAINER */
+
+        .container-localizacao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+
+            margin-top: 20px;
+        }
+
+        /* BOTÕES DA ESQUERDA */
+
+        .botoes-lado {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+
+
+        .btn-lateral {
+
+            width: 190px;
+            height: 110px;
+
+            background-color: white;
+
+            border: none;
+            border-radius: 18px;
+
+            font-family: "Oswald", sans-serif;
+            font-size: 24px;
+            color: rgb(110, 52, 1);
+
+            cursor: pointer;
+
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.20);
+
+            transition: 0.3s;
+        }
+
+        .btn-lateral:hover {
+
+            background-color: rgb(110, 52, 1);
+            color: white;
+
+            transform: translateX(8px);
+        }
+
+        /* QUADRO */
+
+        .quadro {
+
+            font-family: "Oswald", sans-serif;
+
+            background-color: white;
+
+            width: 875px;
+            height: 415px;
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* TEXTO */
+
+        .p_quadro {
+            font-size: 19px;
+        }
+
+        /* MAPA */
+
+        .float_map {
+            float: right;
+        }
+
+        /* CONTEÚDO */
+
+        .float {
+            float: left;
+            width: 45%;
+        }
+
+        /* BOTÃO WHATSAPP */
+
+        .botao-imagem {
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 12px 20px;
+
+            background-color: #02920e;
+            color: white;
+
+            border: none;
+            border-radius: 30px;
+
+            font-family: "Oswald", sans-serif;
+            font-size: 18px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .botao-imagem:hover {
+
+            background-color: #01780b;
+
+            transform: scale(1.05);
+        }
+
+        .botao-imagem img {
+
+            width: 25px;
+            height: 25px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="principal">
-        <div class="conteudo">
-            CONTEÚDO 01
+    <div class="container-localizacao">
+
+        <!-- BOTÕES LATERAIS -->
+
+        <div class="botoes-lado">
+
+            <button class="btn-lateral">
+                📍 Localização
+            </button>
+
+            <button class="btn-lateral">
+                📞 Contato
+            </button>
+
+            <button class="btn-lateral">
+                🕒 Horários
+            </button>
+
         </div>
-        <div class="conteudo">
-            CONTEÚDO 02
-        </div>
-        <div class="conteudo">
-            CONTEÚDO 03
-        </div>
-        <div class="p">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veniam perspiciatis sed? Sequi laboriosam molestias esse ullam neque eveniet corrupti perspiciatis blanditiis libero obcaecati qui natus rerum quisquam, fuga ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolorem iure voluptatem quaerat tempora obcaecati veritatis quidem expedita velit quis minima illum voluptate, ipsam assumenda totam odit laborum. Veniam, assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis alias sit libero, quis tenetur omnis, molestiae sint quia doloribus impedit nostrum ab numquam, voluptates sed facilis culpa? Atque, asperiores veritatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum ipsam maxime quidem dolor, quibusdam cupiditate, tempore architecto quo pariatur reiciendis id debitis minima ipsum alias officia repellendus voluptates! Sequi!</p>
+
+        <!-- QUADRO -->
+
+        <div class="quadro">
+
+            <div class="float_map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="450" height="375" style="border:0;"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+
             </div>
-            <div class="2">
-            <div class="conteudo">
-            <img src="img/Nasa.jpg" width="150" height="150">
+
+            <div class="float">
+
+                <span class="p_quadro">
+                    📍 Henrique Pontara, 379 - Jardim Santa Fé Ourinhos - SP
+                </span>
+
+                <br><br>
+
+                <hr>
+
+                <br>
+
+                <strong>Funcionamento:</strong><br>
+
+                Segunda - Terça - Quarta - Quinta - Sexta<br>
+
+                <strong>12h - 22h</strong>
+
+                <br><br>
+
+                Sábado - Domingo<br>
+
+                <strong>14h - 00h</strong>
+
+                <br><br>
+
+                <hr>
+
+                <br>
+
+                <strong>Telefone:</strong><br>
+
+                (+55) 14 99604 - 9756
+
+                <br><br>
+
+                <button class="botao-imagem">
+
+                    <img src="img/whats_logo_01.png" alt="">
+
+                    Fale com a gente
+
+                </button>
+
+            </div>
+
         </div>
-        <div class="conteudo">
-            <img src="img/Sistema Solar.jpg" width="150" height="150">
-        </div>
-        <div class="conteudo">
-            <img src="img/Galáxia.jpg" width="150" height="150">
-        </div>
-        <img src="img/Nasa.jpg" width="300">
-        <div class="clear"></div>
+
     </div>
-    </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis suscipit recusandae distinctio veritatis? At nulla minima fuga et, sequi doloribus id omnis quae odio odit in totam nemo reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam, culpa unde doloribus pariatur quidem voluptatum obcaecati error fuga impedit, quo minus molestiae nisi a ducimus dolores adipisci, doloremque quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae laborum repudiandae nostrum tempora officia excepturi expedita vel labore culpa consequuntur fugiat error sed commodi necessitatibus omnis maiores quaerat, aspernatur quia?
-    </p>
 </body>
+
 </html>
