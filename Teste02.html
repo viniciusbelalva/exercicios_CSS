@@ -5,57 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combinando Seletores - CSS</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         /*Seletor descendente*/
-        div p{
-            color: rgb(148, 0, 0);
-        }
-        /*Seletor filho*/
-        div > p{
-            color: green;
-        }
-        /*Seletor adjacente*/
-        div + h1{
-            color: rgb(173, 135, 173);
-            text-align: center;
-        }
-        /*seletor irmão geral*/
-        div ~ h2{
-            color: rgb(89, 0, 89);
-            text-align: center;
-        }
+       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-        #identif p{
-            color: blue;
-        }
-        .classe p{
-            color: rgb(226, 43, 186);
-        }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(222, 222, 222);
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Oswald", sans-serif;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FORMULÁRIO */
+
+.registro{
+
+    background-color: white;
+
+    width: 420px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.35);
+}
+
+/* TÍTULO */
+
+.registro h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #0f172a;
+
+    font-size: 40px;
+}
+
+/* CAMPOS */
+
+.campo{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.campo label{
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 18px;
+}
+
+/* INPUTS */
+
+.campo input{
+
+    padding: 14px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.campo input:focus{
+
+    border-color: #2563eb;
+
+    box-shadow: 0px 0px 10px rgba(37,99,235,0.3);
+}
+
+/* BOTÃO */
+
+button{
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-family: "Oswald", sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+
+    background-color: #1d4ed8;
+
+    transform: scale(1.02);
+}
 </style>
+
+
+
+</head>
+
 <body>
-    <div>
-        <h1>Seletores</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui facere, perferendis eum dicta labore deserunt cupiditate explicabo repudiandae, repellendus sit non. Laborum rerum laboriosam dolore, enim atque odit iure?
-        </p>
-        <article>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae fugiat corporis omnis quis sunt molestiae, molestias ad, mollitia veniam magnam explicabo assumenda placeat iure amet nam expedita temporibus possimus eum.</p>
-        </article>
-    </div>
-    <h1> Exemplo </h1> 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor ex tenetur id dolore vitae maiores nobis! Qui voluptate veniam iste officiis facere, assumenda quo ratione, quisquam doloremque, totam quia.
-    </p> 
-    <h2> Exemplo 2</h2>
-    <div id="identif">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque, pariatur quaerat ab minus quidem doloremque aliquid a ullam ea in error repellat at est enim delectus deserunt. Tempore, aliquam?
-        </p>
-    </div>
-    <div class="classe">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis iusto cupiditate hic expedita inventore quidem corrupti molestiae, minus error impedit, non porro laboriosam quo. Placeat mollitia reprehenderit laboriosam alias repellendus?
-        </p>
-    </div>
+
+<div class="container">
+
+    <form class="registro">
+
+        <h1>Registre-se</h1>
+
+        <div class="campo">
+            <label>Nome Completo</label>
+            <input type="text" placeholder="Digite seu nome completo">
+        </div>
+
+        <div class="campo">
+            <label>CPF</label>
+            <input type="text" placeholder="000.000.000-00">
+        </div>
+
+        <div class="campo">
+            <label>Email</label>
+            <input type="email" placeholder="Digite seu email">
+        </div>
+
+        <div class="campo">
+            <label>Telefone</label>
+            <input type="tel" placeholder="(00) 00000-0000">
+        </div>
+
+        <div class="campo">
+            <label>Endereço</label>
+            <input type="text" placeholder="Digite seu endereço">
+        </div>
+
+        <button type="submit">Registrar</button>
+
+    </form>
+
+</div>
+
 </body>
 </html>
